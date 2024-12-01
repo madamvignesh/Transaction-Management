@@ -46,7 +46,7 @@ class CreateTransaction extends Component {
     };
     console.log(formData)
     try {
-      const url = "http://localhost:8081/api/transactions";
+      const url = "https://deploying-backend-13.onrender.com/api/transactions";
       const options = {
         method: "POST",
         headers: {

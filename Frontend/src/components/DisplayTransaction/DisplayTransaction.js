@@ -27,7 +27,7 @@ class DisplayTransaction extends Component {
         this.setState({ apiStatus: apiCallStatus.isProgress });
         console.log("Fetching")
         try {
-            const url = `http://localhost:8081/api/transactions/?user_id=${searchUserId}`;
+            const url = `https://deploying-backend-13.onrender.com/api/transactions/?user_id=${searchUserId}`;
             const options = {
                 method: 'GET',
             };

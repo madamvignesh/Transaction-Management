@@ -25,7 +25,7 @@ class ViewTransaction extends Component{
         this.setState({apiStatus:apiCallStatus.isProgress})
         const { transactionID } = this.props; 
         try {
-          const url = `http://localhost:8081/api/transactions/${transactionID}`; 
+          const url = `https://deploying-backend-13.onrender.com/api/transactions/${transactionID}`; 
           console.log(url)
           const options = {
           method: 'GET',
@@ -75,7 +75,7 @@ class ViewTransaction extends Component{
         const {selectedOptions} = this.state 
         const { transactionID } = this.props; 
         console.log(transactionID)
-        const url = `http://localhost:8081/api/transactions/${transactionID}/`;
+        const url = `https://deploying-backend-13.onrender.com/api/transactions/${transactionID}/`;
         const options = {
           method: 'PUT',
           headers: {
